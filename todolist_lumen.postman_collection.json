@@ -1,0 +1,2091 @@
+{
+	"info": {
+		"_postman_id": "bb8bbc4f-676e-453e-a0cc-00cb1f0d46dd",
+		"name": "todolist_lumen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15477491"
+	},
+	"item": [
+		{
+			"name": "task",
+			"item": [
+				{
+					"name": "localhost:8000/api/task/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/task/32"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/task/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/task/32"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:56:26 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:56:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Detail Task!\",\n    \"data\": [\n        {\n            \"task_id\": 32,\n            \"user_id\": 16,\n            \"task_name\": \"test todo 2\",\n            \"description\": \"keterangan test todo 2\",\n            \"due_date\": \"2024-01-08\",\n            \"status\": \"pending\",\n            \"priority\": \"low\",\n            \"created_at\": \"2024-01-12T22:54:54.000000Z\",\n            \"updated_at\": \"2024-01-12T22:54:54.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/task/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/task/31"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/task/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/task/31"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:55:47 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:55:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Task Berhasil Dihapus!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "task_name",
+									"value": "test todo 32",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "keterangan test todo 32",
+									"type": "text"
+								},
+								{
+									"key": "due_date",
+									"value": "2024-01-08",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "pending",
+									"type": "text"
+								},
+								{
+									"key": "priority",
+									"value": "low",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/task"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/task",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "task_name",
+											"value": "test todo 1",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "keterangan test todo 1",
+											"type": "text"
+										},
+										{
+											"key": "due_date",
+											"value": "2024-01-08",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "pending",
+											"type": "text"
+										},
+										{
+											"key": "priority",
+											"value": "low",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/task"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:52:57 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:52:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Task Berhasil Disimpan!\",\n    \"data\": {\n        \"user_id\": 16,\n        \"task_name\": \"test todo 1\",\n        \"description\": \"keterangan test todo 1\",\n        \"due_date\": \"2024-01-08\",\n        \"status\": \"pending\",\n        \"priority\": \"low\",\n        \"updated_at\": \"2024-01-12T22:52:56.000000Z\",\n        \"created_at\": \"2024-01-12T22:52:56.000000Z\",\n        \"id\": 31\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/task/31",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "task_name",
+									"value": "test todo 1 edit",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "keterangan test todo 1 edit",
+									"type": "text"
+								},
+								{
+									"key": "due_date",
+									"value": "12-01-2024",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "pending",
+									"type": "text"
+								},
+								{
+									"key": "priority",
+									"value": "low",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/task/31"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/task",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "task_name",
+											"value": "test todo 1 edit",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "keterangan test todo 1 edit",
+											"type": "text"
+										},
+										{
+											"key": "due_date",
+											"value": "12-01-2024",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "pending",
+											"type": "text"
+										},
+										{
+											"key": "priority",
+											"value": "low",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/task/31"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:53:54 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:53:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Task Berhasil Diupdate!\",\n    \"data\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/task",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/task"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/task",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/task"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:59:46 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:59:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"List TodoList\",\n    \"data\": [\n        {\n            \"task_id\": 32,\n            \"task_name\": \"test todo 2\",\n            \"description\": \"keterangan test todo 2\",\n            \"category_name\": \"Finance\",\n            \"status\": \"pending\",\n            \"priority\": \"low\",\n            \"due_date\": \"2024-01-08\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "localhost:8000/api/category/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/api/category/1"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/category/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:8000/api/category/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:58:51 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:58:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Detail Category!\",\n    \"data\": [\n        {\n            \"category_id\": 1,\n            \"category_name\": \"Sport\",\n            \"created_at\": \"2024-01-07T22:49:13.000000Z\",\n            \"updated_at\": \"2024-01-07T22:49:13.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/category/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8000/api/category/4"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/category/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "localhost:8000/api/category/4"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:57:31 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:57:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category Berhasil Dihapus!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_name",
+									"value": "Health",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/category"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "category_name",
+											"value": "Finance",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/category"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:57:48 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:57:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category Berhasil Disimpan!\",\n    \"data\": {\n        \"category_name\": \"Finance\",\n        \"updated_at\": \"2024-01-12T15:57:48.000000Z\",\n        \"created_at\": \"2024-01-12T15:57:48.000000Z\",\n        \"id\": 2\n    }\n}"
+						},
+						{
+							"name": "localhost:8000/api/category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "category_name",
+											"value": "Keuwangan",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/category"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 16:00:18 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 16:00:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category Berhasil Disimpan!\",\n    \"data\": {\n        \"category_name\": \"Keuwangan\",\n        \"updated_at\": \"2024-01-12T16:00:18.000000Z\",\n        \"created_at\": \"2024-01-12T16:00:18.000000Z\",\n        \"id\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_name",
+									"value": "Keuangan",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/category/3"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/category",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "category_name",
+											"value": "Keuangan",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/category/3"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 16:02:07 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 16:02:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category Berhasil Diupdate!\",\n    \"data\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/api/category"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:8000/api/category"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 16:01:02 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 16:01:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"List Category\",\n    \"data\": [\n        {\n            \"category_id\": 1,\n            \"category_name\": \"Sport\",\n            \"created_at\": \"2024-01-07T22:49:13.000000Z\",\n            \"updated_at\": \"2024-01-07T22:49:13.000000Z\"\n        },\n        {\n            \"category_id\": 2,\n            \"category_name\": \"Finance\",\n            \"created_at\": \"2024-01-12T15:57:48.000000Z\",\n            \"updated_at\": \"2024-01-12T15:57:48.000000Z\"\n        },\n        {\n            \"category_id\": 3,\n            \"category_name\": \"Keuwangan\",\n            \"created_at\": \"2024-01-12T16:00:18.000000Z\",\n            \"updated_at\": \"2024-01-12T16:00:18.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "notification",
+			"item": [
+				{
+					"name": "localhost:8000/api/notification/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/notification/6"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/notification/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/notification/6"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 23:05:05 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 23:05:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Detail Notification!\",\n    \"data\": [\n        {\n            \"notification_id\": 6,\n            \"user_id\": 16,\n            \"notification_message\": \"Kamu berhasil menambah task baru\",\n            \"created_at\": \"2024-01-12T22:52:57.000000Z\",\n            \"updated_at\": \"2024-01-12T22:52:57.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/notification/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/notification/8"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/notification/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/notification/8"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 23:05:53 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 23:05:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Notification Berhasil Dihapus!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/notification",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/notification"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/notification",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/notification"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 23:04:21 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 23:04:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"List Notification\",\n    \"data\": [\n        {\n            \"notification_id\": 8,\n            \"user_id\": 16,\n            \"notification_message\": \"Kamu berhasil menambah task baru\",\n            \"created_at\": \"2024-01-12T23:00:22.000000Z\",\n            \"updated_at\": \"2024-01-12T23:00:22.000000Z\"\n        },\n        {\n            \"notification_id\": 7,\n            \"user_id\": 16,\n            \"notification_message\": \"Kamu berhasil menambah task baru\",\n            \"created_at\": \"2024-01-12T22:54:55.000000Z\",\n            \"updated_at\": \"2024-01-12T22:54:55.000000Z\"\n        },\n        {\n            \"notification_id\": 6,\n            \"user_id\": 16,\n            \"notification_message\": \"Kamu berhasil menambah task baru\",\n            \"created_at\": \"2024-01-12T22:52:57.000000Z\",\n            \"updated_at\": \"2024-01-12T22:52:57.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "taskcategory",
+			"item": [
+				{
+					"name": "localhost:8000/api/task-category-by-task-id/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "task_id",
+									"value": "32",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/task-category-by-task-id/32"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/task-category-by-task-id/1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "category_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "task_id",
+											"value": "32",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/task-category-by-task-id/32"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 23:03:54 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 23:03:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Detail Category!\",\n    \"data\": [\n        {\n            \"taskcategory_id\": 6,\n            \"task_id\": 32,\n            \"category_id\": 2,\n            \"created_at\": \"2024-01-12T22:58:40.000000Z\",\n            \"updated_at\": \"2024-01-12T22:59:09.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/task-category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "task_id",
+									"value": "32",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/task-category"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/task-category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "category_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "task_id",
+											"value": "32",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/task-category"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:58:40 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:58:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Task Category Berhasil Disimpan!\",\n    \"data\": {\n        \"task_id\": \"32\",\n        \"category_id\": \"1\",\n        \"updated_at\": \"2024-01-12T22:58:40.000000Z\",\n        \"created_at\": \"2024-01-12T22:58:40.000000Z\",\n        \"id\": 6\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/task-category-by-task-id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "task_id",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/task-category-by-task-id/32",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"task-category-by-task-id",
+								"32"
+							],
+							"query": [
+								{
+									"key": "task_id",
+									"value": "25",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/task-category-by-task-id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "task_id",
+											"value": "32",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/task-category-by-task-id/32",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"task-category-by-task-id",
+										"32"
+									],
+									"query": [
+										{
+											"key": "task_id",
+											"value": "25",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:59:09 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:59:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Task Category Berhasil Diupdate!\",\n    \"data\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/task-category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/task-category"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/task-category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDk5ODU1LCJleHAiOjE3MDUxMDM0NTUsIm5iZiI6MTcwNTA5OTg1NSwianRpIjoiTWxMdnluRUYzMVdjbDBlNiIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5IkiDMy-80Wz6eI-VJiVhCmHwV060Kebjp3XCeFRvcQ",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/task-category"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:51:30 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 22:51:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"List Task Category\",\n    \"data\": [\n        {\n            \"taskcategory_id\": 5,\n            \"task_id\": 30,\n            \"category_id\": 1,\n            \"created_at\": \"2024-01-12T15:15:06.000000Z\",\n            \"updated_at\": \"2024-01-12T15:15:06.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "localhost:8000/api/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "johndoe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/login"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "johndoe@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:54:12 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:54:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDc0ODUyLCJleHAiOjE3MDUwNzg0NTIsIm5iZiI6MTcwNTA3NDg1MiwianRpIjoiaFZ3UmZKcWJoUW51RFIxRSIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.gn0fiw37eokYL84RD36O2oLpV6TpO31I4zgT1uUt30w\",\n    \"token_type\": \"bearer\",\n    \"user\": {\n        \"user_id\": 16,\n        \"name\": \"Jhon Doe\",\n        \"email\": \"johndoe@gmail.com\",\n        \"password\": \"$2y$12$h.RCsJzhnpokKbo.Ad//yOWr008R8X27rHnrEiB59bw5KGKdM3Amy\",\n        \"created_at\": \"2024-01-12T15:52:26.000000Z\",\n        \"updated_at\": \"2024-01-12T15:52:26.000000Z\"\n    },\n    \"expires_in\": 86400\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/user-profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDc0ODUyLCJleHAiOjE3MDUwNzg0NTIsIm5iZiI6MTcwNTA3NDg1MiwianRpIjoiaFZ3UmZKcWJoUW51RFIxRSIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.gn0fiw37eokYL84RD36O2oLpV6TpO31I4zgT1uUt30w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "localhost:8000/api/user-profile"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/user-profile",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDc0ODUyLCJleHAiOjE3MDUwNzg0NTIsIm5iZiI6MTcwNTA3NDg1MiwianRpIjoiaFZ3UmZKcWJoUW51RFIxRSIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.gn0fiw37eokYL84RD36O2oLpV6TpO31I4zgT1uUt30w",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": "localhost:8000/api/user-profile"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:55:37 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:55:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user_id\": 16,\n    \"name\": \"Jhon Doe\",\n    \"email\": \"johndoe@gmail.com\",\n    \"password\": \"$2y$12$h.RCsJzhnpokKbo.Ad//yOWr008R8X27rHnrEiB59bw5KGKdM3Amy\",\n    \"created_at\": \"2024-01-12T15:52:26.000000Z\",\n    \"updated_at\": \"2024-01-12T15:52:26.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jhon Doe",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "johndoe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/register"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Jhon Doe",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "johndoe@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/register"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:52:26 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:52:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Registrasi Berhasil Disimpan!\",\n    \"data\": {\n        \"name\": \"Jhon Doe\",\n        \"email\": \"johndoe@gmail.com\",\n        \"password\": \"$2y$12$h.RCsJzhnpokKbo.Ad//yOWr008R8X27rHnrEiB59bw5KGKdM3Amy\",\n        \"updated_at\": \"2024-01-12T15:52:26.000000Z\",\n        \"created_at\": \"2024-01-12T15:52:26.000000Z\",\n        \"user_id\": 16\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
